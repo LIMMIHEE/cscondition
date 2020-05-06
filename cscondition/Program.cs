@@ -102,7 +102,61 @@ namespace cscondition
                 Console.WriteLine("좋은 날이네요.");
             }
 
+          
+            ConsoleKeyInfo info =  Console.ReadKey();
+            switch (info.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("아래로 이동");
+                    break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("왼쪽으로 이동");
+                    break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("오른쪽으로 이동");
+                    break;
+                default:
+                    switch (info.KeyChar)
+                    {
+                        /*
+                        case (char)38:
+                            Console.WriteLine("위로 이동");
+                            break;
+                            */
+                        case '가':
+                            Console.WriteLine("가 입력");
+                            break;
+                        default:
+                            Console.WriteLine("다른 키 입력");
+                            break;
+                    }
+                    //Console.WriteLine("방향키 이외의 키 입력");
+                    break;
+                    //case ConsoleKey.('가'):
+                    // Console.WriteLine("위로 이동");
+                    //break;
+            }
+            /*
+            switch (info.KeyChar)
+            {
+                case 'a':
+                    Console.WriteLine("a 입력하겼습니다.");
+                    break;
+            }
 
+            switch (info.KeyChar)
+            {
+                case (char) 38:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case '가':
+                    Console.WriteLine("위로 이동");
+                    break;
+            }
+            */
         }
     }
 }
