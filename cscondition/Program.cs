@@ -35,13 +35,18 @@ namespace cscondition
             Console.WriteLine(DateTime.Now.Millisecond);
             Console.WriteLine(DateTime.Now.Second);
 
-            if(DateTime.Now.Hour < 12)
+            if(DateTime.Now.Hour < 11)
             {
-                Console.WriteLine("오전입니다.");
+                Console.WriteLine("아침 먹을 시간입니다.");
             }else
             //if (DateTime.Now.Hour >= 12)
             {
-                Console.WriteLine("오후입니다.");
+                if (DateTime.Now.Hour < 15)
+                {
+                    Console.WriteLine("점심 먹을 시간입니다.");
+                }
+                Console.WriteLine("저녁 먹을 시간입니다.");
+                
             }
         }
     }
