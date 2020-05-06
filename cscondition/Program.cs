@@ -85,9 +85,23 @@ namespace cscondition
             }
              */
 
+            /* 
             var input = int.Parse(Console.ReadLine());
             Console.WriteLine(input % 2 == 0 ? "짝수입니다" : "홀수입니다");
             Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다");
+            */
+
+            Console.Write("입력 : " );
+            String line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요");
+            }
+            else
+            {
+                Console.WriteLine("좋은 날이네요.");
+            }
+
 
         }
     }
