@@ -53,6 +53,11 @@ namespace cscondition
                 
             }
             */
+
+
+
+            // 스위치 문
+            /*
             var input = int.Parse(Console.ReadLine());
             switch (input % 2)
             {
@@ -78,6 +83,12 @@ namespace cscondition
                 case 11: Console.WriteLine("가을입니다."); break;
                 default: Console.WriteLine("인식 불가합니다."); break;
             }
+             */
+
+            var input = int.Parse(Console.ReadLine());
+            Console.WriteLine(input % 2 == 0 ? "짝수입니다" : "홀수입니다");
+            Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다");
+
         }
     }
 }
